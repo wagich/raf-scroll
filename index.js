@@ -52,6 +52,10 @@ module.exports = {
 function getEvent() {
   var scroll = scrollTop();
 
+  if (scroll === scrollY) { // we haven't scrolled since the last tick
+    return null;
+  }
+
   if (ticking) {
     deltaY = scroll - scrollY;
   }
@@ -67,7 +71,10 @@ function getEvent() {
 function update() {
   rafId = raf(update);
 
-  ticking = true;
-  emitter.emit('scroll', getEvent());
-  ticking = false;
+  var event = getEvent();
+  if (event !== null){
+    ticking = true;
+    emitter.emit('scroll', event);
+    ticking = false;
+  }
 }

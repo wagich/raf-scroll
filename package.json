@@ -1,6 +1,6 @@
 {
-  "name": "raf-scroll",
-  "version": "1.4.0",
+  "name": "@wagich/raf-scroll",
+  "version": "1.5.0",
   "description": "A scroll event that fires only once per frame.",
   "main": "index.js",
   "directories": {
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ayamflow/raf-scroll"
+    "url": "https://github.com/wagich/raf-scroll"
   },
   "keywords": [
     "raf",
@@ -24,9 +24,9 @@
   "author": "= <=>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ayamflow/raf-scroll/issues"
+    "url": "https://github.com/wagich/raf-scroll/issues"
   },
-  "homepage": "https://github.com/ayamflow/raf-scroll",
+  "homepage": "https://github.com/wagich/raf-scroll",
   "dependencies": {
     "component-raf": "^1.2.0",
     "scrolltop": "0.0.1",
