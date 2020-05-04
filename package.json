@@ -1,9 +1,9 @@
 {
-	"publishConfig": {
-		"registry": "https://npm.pkg.github.com/"
-	},
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "name": "@wagich/raf-scroll",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "A scroll event that fires only once per frame.",
   "main": "index.js",
   "types": "index.d.ts",
